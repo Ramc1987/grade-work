@@ -1,14 +1,17 @@
-$color-base:#000000;
-$color-second: #444444;
-$decor-color: #63d1bb;
-$hover-color: #62d1ba;
-$mobile-width: 320px;
-$desktop-width: 1150px;
+$first-color: #333333;
+$mobile: 320px;
 $tablet: 768px;
+$desktop: 1440px;
 
-@mixin font-title($fs: 17px, $lh: 24px, $fw: 700) {
-  font-family: "Open Sans", "Arial", sans-serif;
+@mixin font-title($fs: 16px, $lh: 24px, $fw: 400) {
+  font-family: "Montserrat-Regular", "Arial", sans-serif;
   font-weight: $fw;
   font-size: $fs;
   line-height: $lh;
+}
+
+@mixin zero($mrg: 0, $pdng: 0, $lstn: none) {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }

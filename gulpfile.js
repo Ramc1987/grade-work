@@ -14,6 +14,7 @@ import browser from 'browser-sync';
 import htmlmin from 'gulp-htmlmin';
 
 // Styles
+
 const styles = () => {
   return gulp.src('source/sass/style.scss', { sourcemaps: true })
     .pipe(plumber())

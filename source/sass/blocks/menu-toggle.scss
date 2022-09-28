@@ -2,7 +2,6 @@
   position: relative;
   border: none;
   background: transparent;
-  margin-left: auto;
   width: 16px;
   height: 16px;
   padding: 22px;
@@ -19,7 +18,7 @@
   background: $first-color;
 
   position: absolute;
-  left: 0;
+  left: 13px;
 
   transition-duration: 0.25s;
   transition-delay: 0.25s;

@@ -9,11 +9,20 @@
   margin: 0 auto;
 }
 
+.button {
+  box-sizing: border-box;
+  background: $second-color;
+  border-radius: 4px;
+  border: none;
+  padding: 0;
+}
+
 html {
   height: 100%;
 }
 
 body {
+  position: relative;
   margin: 0;
   display: flex;
   flex-direction: column;

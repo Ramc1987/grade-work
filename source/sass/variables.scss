@@ -3,10 +3,10 @@ $mobile: 320px;
 $tablet: 768px;
 $desktop: 1440px;
 
-@mixin font-title($fs: 16px, $lh: 24px, $fw: 400) {
+@mixin font-title ($fs: 16px, $lh: 24px, $fw: 400) {
   font-family: "Montserrat-Regular", "Arial", sans-serif;
-  font-weight: $fw;
   font-size: $fs;
+  font-weight: $fw;
   line-height: $lh;
 }
 

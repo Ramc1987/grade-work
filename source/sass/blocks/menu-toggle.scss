@@ -1,0 +1,66 @@
+.menu-toggle {
+  position: relative;
+  border: none;
+  background: transparent;
+  margin-left: auto;
+  width: 16px;
+  height: 16px;
+  padding: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 1s;
+  cursor: pointer;
+}
+
+.menu-toggle__line {
+  height: 2px;
+  width: 16px;
+  background: $first-color;
+
+  position: absolute;
+  left: 0;
+
+  transition-duration: 0.25s;
+  transition-delay: 0.25s;
+
+  &::after {
+    content: "";
+    left: 0;
+    position: absolute;
+    top: 4px;
+    height: 2px;
+    width: 16px;
+    background: $first-color;
+    transition: transform 0.25s, top 0.25s 0.25s;
+  }
+
+  &::before {
+    content: "";
+    left: 0;
+    position: absolute;
+    top: -4px;
+    height: 2px;
+    width: 16px;
+    background: $first-color;
+    transition: transform 0.25s, top 0.25s 0.25s;
+  }
+}
+
+.menu-toggle.open span {
+  transition-duration: 0.1s;
+  transition-delay: 0.25s;
+  background: transparent;
+}
+
+.menu-toggle.open span::before {
+  transition: top 0.25s, transform 0.25s 0.25s;
+  top: 0;
+  transform: rotateZ(-45deg);
+}
+
+.menu-toggle.open span::after {
+  transition: top 0.4s, transform 0.25s 0.25s;
+  top: 0;
+  transform: rotateZ(45deg);
+}

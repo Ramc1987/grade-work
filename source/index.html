@@ -18,39 +18,59 @@
         </picture>
       </a>
       <nav class="header__main-nav" aria-label="Основная.">
-      <ul class="main-nav main-nav__list" aria-label="По сайту.">
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">главная</a>
+        <ul class="main-nav main-nav__list" aria-label="По сайту.">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">каталог</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">доставка</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">о нас</a>
+          </li>
+        </ul>
+        <ul class="user-nav user-nav__list" aria-label="Для пользователя.">
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="#">
+              <svg class="user-nav__icon user-nav__icon--user" role="img" aria-label="Вход для пользователя.">
+                <use xlink:href="img/sprite.svg#user">
+              </svg>
+              <span class="user-nav__link-lable">войти</span>
+            </a>
+          </li>
+          <li class="user-nav__item">
+            <a class="user-nav__link" href="#">
+              <svg class="user-nav__icon user-nav__icon--basket" role="img" aria-label="корзина для выбранного товара.">
+                <use xlink:href="img/sprite.svg#basket">
+              </svg>
+              <span class="user-nav__link-lable">корзина</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="menu-toggle open" type="button">
+        <span class="menu-toggle__line"></span>
+        <span class="hidden">Открыть меню</span>
+      </button>
+    </div>
+    <div class="mobile-menu mobile-menu--close">
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">главная</a>
         </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">каталог</a>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">каталог</a>
         </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">доставка</a>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">доставка</a>
         </li>
-        <li class="main-nav__item">
-          <a class="main-nav__link" href="#">о нас</a>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#">о нас</a>
         </li>
       </ul>
-      <ul class="user-nav user-nav__list" aria-label="Для пользователя.">
-        <li class="user-nav__item">
-          <a class="user-nav__link" href="#">
-            <svg class="user-nav__icon user-nav__icon--user" role="img" aria-label="Вход для пользователя.">
-              <use xlink:href="img/sprite.svg#user">
-            </svg>
-            <span class="user-nav__link-lable">войти</span>
-          </a>
-        </li>
-        <li class="user-nav__item">
-          <a class="user-nav__link" href="#">
-            <svg class="user-nav__icon user-nav__icon--basket" role="img" aria-label="корзина для выбранного товара.">
-              <use xlink:href="img/sprite.svg#basket">
-            </svg>
-            <span class="user-nav__link-lable">корзина</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
     </div>
   </header>
 </body>

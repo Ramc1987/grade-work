@@ -10,13 +10,47 @@
 <body>
   <header class="header">
     <div class="__container">
-      <a class="header-logo" href="index.html">
+      <a class="header__logo logo" href="index.html">
         <picture>
           <source media="(min-width: 1360px)" srcset="img/logotype/drink2go-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logotype/drink2go-tablet.svg">
-          <img class="header-logo__image-logo" src="img/logotype/drink2go-mobile.svg" width="32" height="36" alt="логотип сайта интернет магазина кофейных напитков.">
+          <img class="logo__image" src="img/logotype/drink2go-mobile.svg" width="32" height="36" alt="логотип сайта интернет магазина кофейных напитков.">
         </picture>
       </a>
+      <nav class="header__main-nav" aria-label="Основная.">
+      <ul class="main-nav main-nav__list" aria-label="По сайту.">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">главная</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">каталог</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">доставка</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#">о нас</a>
+        </li>
+      </ul>
+      <ul class="user-nav user-nav__list" aria-label="Для пользователя.">
+        <li class="user-nav__item">
+          <a class="user-nav__link" href="#">
+            <svg class="user-nav__icon user-nav__icon--user" role="img" aria-label="Вход для пользователя.">
+              <use xlink:href="img/sprite.svg#user">
+            </svg>
+            <span class="user-nav__link-lable">войти</span>
+          </a>
+        </li>
+        <li class="user-nav__item">
+          <a class="user-nav__link" href="#">
+            <svg class="user-nav__icon user-nav__icon--basket" role="img" aria-label="корзина для выбранного товара.">
+              <use xlink:href="img/sprite.svg#basket">
+            </svg>
+            <span class="user-nav__link-lable">корзина</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
     </div>
   </header>
 </body>

@@ -1,0 +1,36 @@
+.user-nav {
+  @include zero(0, 0, none);
+}
+
+.user-nav__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-nav__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-nav__link {
+  padding: 22px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $first-color;
+}
+
+.user-nav__icon {
+  width: 16px;
+  height: 16px;
+}
+
+// .user-nav__icon--user {}
+
+// .user-nav__icon--basket {}
+
+.user-nav__link-lable {
+  display: none;
+}

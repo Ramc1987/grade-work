@@ -1,0 +1,15 @@
+.main-nav {
+  @include zero(0, 0, none);
+}
+
+.main-nav__list {
+  display: none;
+}
+
+// .main-nav__item {}
+
+.main-nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $first-color;
+}

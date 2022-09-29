@@ -1,15 +1,76 @@
-// .milk{}
+.milk {
+  border: none;
+  padding: 0;
+}
 
-// .milk__title {}
+.milk__title {
+  @include font-title(16px, 24px, 600);
 
-// .milk__list {}
+  margin: 0 0 23px 0;
+  padding: 0;
+  color: $first-color;
+}
 
-// .milk__item {}
+.milk__list {
+  @include zero(0, 0, none);
+}
 
-// .milk__custom-radio {}
+.milk__item {
+  display: flex;
+  align-items: center;
+  margin: 0 0 21px 0;
+}
 
-// .milk__control-radio {}
+.milk__custom-radio {
+  position: relative;
+}
 
-// .milk__box-radio {}
+.milk__control-radio {
+  appearance: none;
+  position: absolute;
 
-// .milk__title-radio {}
+  &:checked + .milk__box-radio::before {
+    display: block;
+  }
+
+  &:checked + .milk__box-radio {
+    border: 2px solid #7859cf;
+  }
+
+  &:disabled + .milk__box-radio {
+    border: 2px solid #e2e2e2;
+  }
+}
+
+.milk__box-radio {
+  position: absolute;
+  top: 0;
+  border: 2px solid #bdbdbd;
+  border-radius: 50px;
+  width: 24px;
+  height: 24px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #7859cf;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.milk__title-radio {
+  @include font-title(16px, 24px, 400);
+
+  color: $first-color;
+  margin-left: 34px;
+
+  &--disabled {
+    color: #bdbdbd;
+  }
+}

@@ -1,5 +1,22 @@
-// .catalog {}
+.catalog {
+  background: #f8f8f8;
+  padding: 50px 0 0 0;
+}
 
-// .catalog__title {}
+.catalog__title {
+  @include font-title(12px, 16px, 700);
 
-// .catalog__subtitle {}
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $second-color;
+  margin: 0 0 4px 0;
+}
+
+.catalog__subtitle {
+  @include font-title(24px, 36px, 700);
+
+  margin: 0 0 20px 0;
+  text-align: center;
+  color: $first-color;
+}

@@ -1,8 +1,18 @@
-// .country-prod {}
+.country-prod {
+  border: none;
+  padding: 0;
+}
 
-// .country-prod__title {}
+.country-prod__title {
+  @include font-title(16px, 24px, 600);
 
-// .country-prod__list {}
+  padding: 0;
+  color: $first-color;
+}
+
+.country-prod__list {
+  @include zero(0, 0, none);
+}
 
 // .country-prod__item {}
 

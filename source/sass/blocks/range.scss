@@ -1,0 +1,11 @@
+.range {
+  border: none;
+  padding: 0;
+}
+
+.range__title {
+  @include font-title(16px, 24px, 600);
+
+  padding: 0;
+  color: $first-color;
+}

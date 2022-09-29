@@ -151,8 +151,8 @@
     <section class="advantages">
       <h2 class="hidden">Преимущества</h2>
       <div class="__container">
-        <span class="advantages__title">преимущества</span>
-        <h2 class="advantages__subtitle">Главные причины выбрать Drink2Go</h2>
+        <h2 class="advantages__title">преимущества</h2>
+        <p class="advantages__subtitle">Главные причины выбрать Drink2Go</p>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--speed">
             <h3 class="advantages__item-title">Скорость</h3>
@@ -171,6 +171,93 @@
             <p class="advantages__item-description">Вся упаковка сделана из перерабатываемых материалов</p>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="catalog">
+      <h2 class="hidden">Каталог</h2>
+      <div class="__container">
+        <h2 class="catalog__title">каталог</h2>
+        <p class="catalog__subtitle">Каталог кофейных напитков</p>
+        <form class="catalog__form filter" action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="filter__range range">
+            <legend class="range__title">Цена</legend>
+          </fieldset>
+          <fieldset class="filter__milk milk">
+            <legend class="milk__title">Наличие молока</legend>
+            <ul class="milk__list">
+              <li class="milk__item">
+                <label class="milk__custom-radio">
+                  <input class="milk__control-radio hidden" name="milk" value="неважно" type="radio" checked>
+                  <span class="milk__box-radio"></span>
+                  <span class="milk__title-radio">Неважно</span>
+                </label>
+              </li>
+              <li class="milk__item">
+                <label class="milk__custom-radio">
+                  <input class="milk__control-radio hidden" name="milk" value="неважно" type="radio">
+                  <span class="milk__box-radio"></span>
+                  <span class="milk__title-radio">Только животное</span>
+                </label>
+              </li>
+              <li class="milk__item">
+                <label class="milk__custom-radio">
+                  <input class="milk__control-radio hidden" name="milk" value="неважно" type="radio">
+                  <span class="milk__box-radio"></span>
+                  <span class="milk__title-radio">Только растительное</span>
+                </label>
+              </li>
+              <li class="milk__item">
+                <label class="milk__custom-radio">
+                  <input class="milk__control-radio hidden" name="milk" value="неважно" type="radio" disabled>
+                  <span class="milk__box-radio"></span>
+                  <span class="milk__title-radio">Без молока</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="filter__country-prod country-prod">
+            <legend class="country-prod__title">Страна произрастания</legend>
+            <ul class="country-prod__list">
+              <li class="country-prod__item">
+                <label class="country-prod__custom-checkbox">
+                  <input class="country-prod__control-checkbox hidden" type="checkbox" name="country" value="бразилия" checked>
+                  <span class="country-prod__box-checkbox"></span>
+                  <span class="country-prod__title-checkbox">Бразилия</span>
+                </label>
+              </li>
+              <li class="country-prod__item">
+                <label class="country-prod__custom-checkbox">
+                  <input class="country-prod__control-checkbox hidden" type="checkbox" name="country" value="Эфиопия">
+                  <span class="country-prod__box-checkbox"></span>
+                  <span class="country-prod__title-checkbox">Эфиопия</span>
+                </label>
+              </li>
+              <li class="country-prod__item">
+                <label class="country-prod__custom-checkbox">
+                  <input class="country-prod__control-checkbox hidden" type="checkbox" name="country" value="Колумбия">
+                  <span class="country-prod__box-checkbox"></span>
+                  <span class="country-prod__title-checkbox">Колумбия</span>
+                </label>
+              </li>
+              <li class="country-prod__item">
+                <label class="country-prod__custom-checkbox">
+                  <input class="country-prod__control-checkbox hidden" type="checkbox" name="country" value="Коста-Рика">
+                  <span class="country-prod__box-checkbox"></span>
+                  <span class="country-prod__title-checkbox">Коста-Рика</span>
+                </label>
+              </li>
+              <li class="country-prod__item">
+                <label class="country-prod__custom-checkbox">
+                  <input class="country-prod__control-checkbox hidden" type="checkbox" name="country" value="Перу" disabled>
+                  <span class="country-prod__box-checkbox"></span>
+                  <span class="country-prod__title-checkbox">Перу</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="filter__button button" type="submit">Применить фильтр</button>
+          <button class="filter__button button" type="reset">Сбросить фильтр</button>
+        </form>
       </div>
     </section>
   </main>

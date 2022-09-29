@@ -245,17 +245,33 @@
                 </label>
               </li>
               <li class="country-prod__item">
-                <label class="country-prod__custom-checkbox">
+                <label class="country-prod__custom-checkbox" data-onlable="on" data-offlable="off">
                   <input class="country-prod__control-checkbox hidden" type="checkbox" name="country" value="Перу" disabled>
                   <span class="country-prod__box-checkbox"></span>
-                  <span class="country-prod__title-checkbox">Перу</span>
+                  <span class="country-prod__title-checkbox country-prod__title-checkbox--disabled">Перу</span>
                 </label>
               </li>
             </ul>
           </fieldset>
           <button class="filter__button button" type="submit">Применить фильтр</button>
-          <button class="filter__button button" type="reset">Сбросить фильтр</button>
+          <button class="filter__button filter__button--reset button" type="reset">Сбросить фильтр</button>
         </form>
+        <div class="catalog__products-wrapper">
+          <div class="catalog__select-wrapper">
+            <span class="catalog__select-title">Сортировка:</span>
+            <select class="catalog__select">
+              <option value="1">по умолчанию</option>
+            </select>
+          </div>
+          <ul class="catalog__products-list">
+            <li class="catalog__product-item"></li>
+            <li class="catalog__product-item"></li>
+            <li class="catalog__product-item"></li>
+            <li class="catalog__product-item"></li>
+            <li class="catalog__product-item"></li>
+            <li class="catalog__product-item"></li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>

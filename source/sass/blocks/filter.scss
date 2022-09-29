@@ -9,3 +9,19 @@
 .filter__country-prod {
   margin: 0 0 35px 0;
 }
+
+.filter__button {
+  display: block;
+  padding: 10px 16px;
+  width: 160px;
+  margin: auto;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  &--reset {
+    background: #ffffff;
+    color: $second-color;
+  }
+}

@@ -90,6 +90,28 @@
   text-align: center;
 }
 
+.swiper-button-next {
+  width: 20px;
+  // right: 0;
+  // top: 50%;
+
+  &::after {
+    font-size: 20px;
+    color: $second-color;
+  }
+}
+
+.swiper-button-prev {
+  width: 20px;
+  // left: 0;
+  // top: 0;
+
+  &::after {
+    font-size: 20px;
+    color: $second-color;
+  }
+}
+
 .swiper-pagination {
   height: 20px;
   bottom: 0;

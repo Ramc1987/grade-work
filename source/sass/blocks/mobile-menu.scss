@@ -9,6 +9,10 @@
   &--open {
     display: block;
     position: absolute;
+    top: 65px;
+    left: 0;
+    z-index: 20;
+    background: #ffffff;
   }
 
   &--nojs {

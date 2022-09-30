@@ -1,4 +1,20 @@
-.footer__container {
+.footer__header {
+  border-bottom: 1px solid #f0ebff;
+}
+
+.footer__header-container {
   max-width: 87.5%;
   margin: 0 auto;
+  padding: 22px 0;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  padding-top: 2px;
+}
+
+.footer__navigation {
+  border-bottom: 1px solid #f0ebff;
 }

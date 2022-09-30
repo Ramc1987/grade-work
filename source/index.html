@@ -389,9 +389,9 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__container">
-      <section class="footer__header">
-        <h2 class="hidden">Социальные сети</h2>
+    <section class="footer__header">
+      <h2 class="hidden">Социальные сети</h2>
+      <div class="footer__header-container">
         <a href="#" class="footer__logo logo">
           <picture>
             <source media="(min-width: 1360px)" srcset="img/logotype/drink2go-desktop.svg">
@@ -409,7 +409,7 @@
             </li>
             <li class="social-network__item">
               <a href="#" class="social-network__link">
-                <svg class="social-network__icon" width="20" height="20" role="img" aria-label="Pinterest.">
+                <svg class="social-network__icon" width="22" height="22" role="img" aria-label="Pinterest.">
                   <use xlink:href="img/sprite.svg#pinterest"></use>
                 </svg>
               </a>
@@ -423,8 +423,29 @@
             </li>
           </ul>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+    <section class="footer__navigation navigation">
+      <div class="navigation__container">
+        <h2 class="navigation__title">Интернет-магазин</h2>
+        <nav class="navigation__nav-site" aria-label="Навигация по сайту.">
+          <ul class="navigation__nav-list">
+            <li class="navigation__nav-item">
+              <a class="navigation__nav-link" href="#">Каталог</a>
+            </li>
+            <li class="navigation__nav-item">
+              <a class="navigation__nav-link" href="#">Доставка</a>
+            </li>
+            <li class="navigation__nav-item">
+              <a class="navigation__nav-link" href="#">Способы оплаты</a>
+            </li>
+            <li class="navigation__nav-item">
+              <a class="navigation__nav-link" href="#">О нас</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="./js/toggle-menu.js"></script>

@@ -1,0 +1,28 @@
+.social-network {
+  width: 160px;
+}
+
+.social-network__list {
+  @include zero(0, 0, none);
+
+  display: flex;
+}
+
+.social-network__item {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.social-network__link {
+  padding: 10px;
+}
+
+.social-network__icon {
+  display: block;
+}

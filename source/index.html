@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="css/style.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Document</title>
 </head>
 <body>
@@ -379,9 +379,9 @@
       </div>
     </section>
     <section class="map">
-      <div class="h2 hidden">Карта с адресом компании</div>
+      <h2 class="hidden">Карта с адресом компании</h2>
       <div class="map__wrapper">
-        <img src="img/map_bg.jpg" alt="Карта с адресом компании" width="320" height="420">
+        <img src="img/map_bg.jpg" alt="Карта с адресом компании">
         <svg class="map__pin-icon" width="38" height="50" role="img" aria-label="Маркер с местонахождением компании.">
           <use xlink:href="img/sprite.svg#map-pin"></use>
         </svg>
@@ -390,7 +390,40 @@
   </main>
   <footer class="footer">
     <div class="footer__container">
-
+      <section class="footer__header">
+        <h2 class="hidden">Социальные сети</h2>
+        <a href="#" class="footer__logo logo">
+          <picture>
+            <source media="(min-width: 1360px)" srcset="img/logotype/drink2go-desktop.svg">
+            <img class="logo__image" src="img/logotype/drink2go-tablet.svg" width="82" height="36" alt="логотип сайта интернет магазина кофейных напитков.">
+          </picture>
+        </a>
+        <div class="footer__social-network social-network">
+          <ul class="social-network__list">
+            <li class="social-network__item">
+              <a href="#" class="social-network__link">
+                <svg class="social-network__icon" width="20" height="20" role="img" aria-label="Vkontakte.">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-network__item">
+              <a href="#" class="social-network__link">
+                <svg class="social-network__icon" width="20" height="20" role="img" aria-label="Pinterest.">
+                  <use xlink:href="img/sprite.svg#pinterest"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-network__item">
+              <a href="#" class="social-network__link">
+                <svg class="social-network__icon" width="20" height="20" role="img" aria-label="Одноклассники.">
+                  <use xlink:href="img/sprite.svg#ok"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
     </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

@@ -1,3 +1,8 @@
+.advantages__container {
+  max-width: 87.5%;
+  margin: 0 auto;
+}
+
 .advantages__title {
   @include font-title(12px, 16px, 700);
 

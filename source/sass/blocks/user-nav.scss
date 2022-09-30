@@ -1,8 +1,6 @@
 .user-nav {
   @include zero(0, 0, none);
-}
 
-.user-nav__list {
   display: flex;
   justify-content: center;
   align-items: center;

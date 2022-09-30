@@ -1,0 +1,64 @@
+.cards {
+  @include zero(0, 0, none);
+
+  display: grid;
+  row-gap: 20px;
+}
+
+.cards__product {
+  padding: 40px 20px 20px 18px;
+  background: #ffffff;
+  border-radius: 4px;
+}
+
+.cards__product-image {
+  width: 130px;
+  height: 188px;
+  margin: 0 auto 24px;
+  display: block;
+}
+
+.cards__product-content {
+  margin-bottom: 4px;
+}
+
+.cards__product-title {
+  @include font-title(18px, 32px, 700);
+
+  margin: 0 0 4px 0;
+}
+
+.cards__product-description {
+  @include font-title(14px, 20px, 400);
+
+  margin: 0 0 16px 0;
+  color: $first-color;
+}
+
+.cards__product-buy {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards__product-price {
+  @include font-title(20px, 32px, 600);
+}
+
+.cards__button-buy {
+  @include font-title(14px, 20px, 400);
+
+  position: relative;
+  padding: 8px 20px 8px 46px;
+  width: 141px;
+  color: #ffffff;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    background: url("../../img/icon-button/basket-add.svg") no-repeat;
+    top: 10px;
+    left: 20px;
+  }
+}

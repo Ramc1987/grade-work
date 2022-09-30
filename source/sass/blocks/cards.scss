@@ -18,10 +18,6 @@
   display: block;
 }
 
-.cards__product-content {
-  margin-bottom: 4px;
-}
-
 .cards__product-title {
   @include font-title(18px, 32px, 700);
 

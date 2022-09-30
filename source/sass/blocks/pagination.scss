@@ -1,0 +1,90 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+}
+
+.pagination__list {
+  @include zero(0, 0, none);
+
+  display: grid;
+  grid-template-columns: 40px 40px 40px;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+.pagination__item {
+  @include font-title(16px, 24px, 400);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  margin-right: 20px;
+  color: $second-color;
+}
+
+.pagination__item-checked {
+  @include font-title(16px, 24px, 600);
+
+  color: $first-color;
+}
+
+.pagination__link {
+  padding: 8px;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.pagination__link-text {
+  width: 24px;
+  height: 24px;
+}
+
+.pagination__control-button {
+  box-sizing: border-box;
+  position: relative;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background: #ffffff;
+
+  &--prev {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: #ffffff url("../../img/icon-button/arrow.svg") no-repeat center;
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  &--next {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      background: #ffffff url("../../img/icon-button/arrow.svg") no-repeat center;
+      width: 10px;
+      height: 10px;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.pagination__button-text {
+  @include font-title(14px, 24px, 400);
+
+  display: none;
+  text-align: center;
+  color: $second-color;
+}

@@ -23,6 +23,7 @@
 
 .catalog__products-wrapper {
   padding-top: 36px;
+  margin-bottom: 40px;
 }
 
 .catalog__select-wrapper {
@@ -81,4 +82,12 @@
 
   color: $first-color;
   margin-right: 8px;
+}
+
+.catalog__products-list {
+  margin: 0 0 40px 0;
+}
+
+.catalog__products-pagination {
+  padding-bottom: 40px;
 }

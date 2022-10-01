@@ -1,0 +1,52 @@
+.contacts__container {
+  max-width: 87.5%;
+  margin: 0 auto 20px;
+  padding: 20px 0 0 0;
+}
+
+.contacts__title {
+  @include font-title(14px, 20px, 700);
+
+  margin: 0 0 20px 0;
+  color: $second-color;
+}
+
+.contacts__address-company {
+  @include font-title(14px, 20px, 400);
+
+  position: relative;
+  padding-left: 19px;
+  margin: 0 0 16px 0;
+  font-style: normal;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 13px;
+    height: 16px;
+    background: url("../img/icons/address.svg") no-repeat;
+  }
+}
+
+.contacts__phone-company {
+  @include font-title(14px, 20px, 400);
+
+  display: block;
+  position: relative;
+  padding-left: 19px;
+  font-style: normal;
+  text-decoration: none;
+  color: $first-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 13px;
+    height: 16px;
+    background: url("../img/icons/phone.svg") no-repeat;
+  }
+}

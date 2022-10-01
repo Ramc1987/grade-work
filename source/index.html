@@ -14,45 +14,46 @@
     <div class="header__container">
       <a class="header__logo logo" href="index.html">
         <picture>
-          <source media="(min-width: 1360px)" srcset="img/logotype/drink2go-desktop.svg">
+          <source media="(min-width: 1440px)" srcset="img/logotype/drink2go-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logotype/drink2go-tablet.svg">
-          <img class="logo__image" src="img/logotype/drink2go-mobile.svg" width="32" height="36" alt="логотип сайта интернет магазина кофейных напитков.">
+          <img src="img/logotype/drink2go-mobile.svg" width="32" height="36" alt="логотип сайта интернет магазина кофейных напитков.">
         </picture>
+        <p>Интернет-магазин кофейных напитков</p>
       </a>
       <nav class="header__main-nav" aria-label="Основная.">
         <ul class="main-nav" aria-label="По сайту.">
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">главная</a>
+            <a href="#">главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">каталог</a>
+            <a href="#">каталог</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">доставка</a>
+            <a href="#">доставка</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">о нас</a>
           </li>
         </ul>
-        <ul class="user-nav" aria-label="Для пользователя.">
-          <li class="user-nav__item">
-            <a class="user-nav__link" href="#">
-              <svg class="user-nav__icon user-nav__icon--user" width="16" height="16" role="img" aria-label="Вход для пользователя.">
-                <use xlink:href="img/sprite.svg#user"></use>
-              </svg>
-              <span class="user-nav__link-lable">войти</span>
-            </a>
-          </li>
-          <li class="user-nav__item">
-            <a class="user-nav__link" href="#">
-              <svg class="user-nav__icon user-nav__icon--basket" width="16" height="16" role="img" aria-label="корзина для выбранного товара.">
-                <use xlink:href="img/sprite.svg#basket"></use>
-              </svg>
-              <span class="user-nav__link-lable">корзина</span>
-            </a>
-          </li>
-        </ul>
       </nav>
+      <ul class="user-nav" aria-label="Для пользователя.">
+        <li class="user-nav__item">
+          <a class="user-nav__link" href="#">
+            <svg class="user-nav__icon user-nav__icon--user" width="16" height="16" role="img" aria-label="Вход для пользователя.">
+              <use xlink:href="img/sprite.svg#user"></use>
+            </svg>
+            <span>войти</span>
+          </a>
+        </li>
+        <li class="user-nav__item">
+          <a class="user-nav__link" href="#">
+            <svg class="user-nav__icon user-nav__icon--basket" width="16" height="16" role="img" aria-label="корзина для выбранного товара.">
+              <use xlink:href="img/sprite.svg#basket"></use>
+            </svg>
+            <span class="user-nav__link-lable">корзина</span>
+          </a>
+        </li>
+      </ul>
       <button class="header__menu-toggle menu-toggle" type="button">
         <span class="menu-toggle__line"></span>
         <span class="visually-hidden">Открыть меню</span>

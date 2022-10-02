@@ -3,25 +3,42 @@
 
   display: grid;
   row-gap: 20px;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
 }
 
 .cards__product {
   padding: 40px 20px 20px 18px;
   background: #ffffff;
   border-radius: 4px;
+
+  @media (min-width: $tablet) {
+    padding: 50px 30px 30px 30px;
+  }
 }
 
 .cards__product-image {
-  width: 130px;
-  height: 188px;
   margin: 0 auto 24px;
   display: block;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto 30px;
+  }
 }
 
 .cards__product-title {
   @include font-title(18px, 32px, 700);
 
   margin: 0 0 4px 0;
+
+  @media (min-width: $tablet) {
+    @include font-title(24px, 36px, 700);
+
+    margin: 0 0 10px 0;
+  }
 }
 
 .cards__product-description {

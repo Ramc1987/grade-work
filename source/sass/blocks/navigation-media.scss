@@ -1,7 +1,6 @@
 .navigation-media__container {
-  max-width: 87.5%;
   margin: 0 auto;
-  padding: 20px 0 0 0;
+  padding: 20px;
 }
 
 .navigation-media__title {
@@ -17,14 +16,7 @@
 
 .navigation-media__nav-item {
   max-width: 180px;
-
-  &:not(:last-child) {
-    margin-bottom: 4px;
-  }
-
-  &:last-child {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 4px;
 }
 
 .navigation-media__nav-link {

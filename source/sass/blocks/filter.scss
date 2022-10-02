@@ -1,13 +1,62 @@
+.filter {
+  max-width: 425px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet) {
+    max-width: 728px;
+  }
+}
+
 .filter__range {
+  flex-grow: 1;
   margin: 0 0 24px 0;
+
+  @media (min-width: $tablet) {
+    margin: 0 21px 0 0;
+    width: 219px;
+  }
 }
 
 .filter__milk {
+  flex-grow: 1;
+  width: 210px;
   margin: 0 0 24px 0;
+
+  @media (min-width: $tablet) {
+    margin: 0 21px 0 0;
+  }
 }
 
 .filter__country-prod {
+  flex-grow: 1;
+  width: 197px;
   margin: 0 0 35px 0;
+
+  @media (min-width: $tablet) {
+    margin: 0 21px 0 0;
+  }
+}
+
+.filter__control-button {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 24px;
+
+  @media (min-width: 448px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
+  }
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 40px 0 0 179px;
+    grid-template-columns: 148px 138px;
+    column-gap: 29px;
+  }
 }
 
 .filter__button {
@@ -17,12 +66,19 @@
   margin: auto;
   color: #ffffff;
 
-  &:not(:last-child) {
-    margin-bottom: 24px;
+  @media (min-width: $tablet) {
+    @include font-title(14px, 24px, 400);
+
+    width: 148px;
+    padding: 8px 0;
   }
 
   &--reset {
     background: #ffffff;
     color: $second-color;
+
+    @media (min-width: $tablet) {
+      width: 138px;
+    }
   }
 }

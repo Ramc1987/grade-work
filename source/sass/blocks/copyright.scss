@@ -1,5 +1,9 @@
 .copyright__container {
   padding: 20px 30px;
+
+  @media (min-width: $tablet) {
+    padding: 20px;
+  }
 }
 
 .copyright__container a {

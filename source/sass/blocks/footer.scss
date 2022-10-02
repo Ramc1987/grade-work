@@ -1,14 +1,26 @@
 .footer__header {
   border-bottom: 1px solid #f0ebff;
+  grid-column: 1/4;
 }
 
 .footer__header-container {
-  max-width: 87.5%;
   margin: 0 auto;
-  padding: 22px 0;
+  padding: 22px 20px;
 
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet) {
+    padding: 42px 20px 32px;
+  }
+}
+
+.footer__inner {
+  @media (min-width: $tablet) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+  }
 }
 
 .footer__logo {
@@ -25,4 +37,10 @@
 
 .footer__contacts {
   border-bottom: 1px solid #f0ebff;
+}
+
+.footer__copyright {
+  @media (min-width: $tablet) {
+    grid-column: 1/4;
+  }
 }

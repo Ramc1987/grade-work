@@ -21,16 +21,29 @@
 .user-nav__item {
   display: flex;
   cursor: pointer;
+
+  &:hover .user-nav__icon {
+    fill: $hover-color;
+  }
+
+  &:hover .user-nav__link-lable {
+    color: $hover-color;
+  }
+
+  &:active {
+    background: $active-background;
+  }
 }
 
 .user-nav a {
-  padding: 0 22px;
+  display: block;
+  padding: 22px;
   text-decoration: none;
   text-transform: uppercase;
   color: $first-color;
 
   @media (min-width: $tablet) {
-    padding: 0 22px;
+    padding: 32px 22px;
   }
 
   @media (min-width: $desktop) {
@@ -41,6 +54,11 @@
 .user-nav__icon {
   width: 16px;
   height: 16px;
+  fill: $first-color;
+
+  &:hover {
+    fill: $hover-color;
+  }
 
   @media (min-width: $desktop) {
     margin-right: 8px;

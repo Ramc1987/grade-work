@@ -29,6 +29,10 @@
 .mobile-menu__item {
   border-top: 1px solid #f0ebff;
   border-bottom: 1px solid #f0ebff;
+
+  &:active {
+    background: #f0ebff;
+  }
 }
 
 .mobile-menu__link {

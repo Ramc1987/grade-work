@@ -28,4 +28,12 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $first-color;
+
+  &:hover {
+    color: $hover-color;
+  }
+
+  &:active {
+    color: $active-text;
+  }
 }

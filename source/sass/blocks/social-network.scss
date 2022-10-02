@@ -25,4 +25,13 @@
 
 .social-network__icon {
   display: block;
+  fill: #bdbdbd;
+
+  &:hover {
+    fill: #7859cf;
+  }
+
+  &:active {
+    fill: #593cac;
+  }
 }

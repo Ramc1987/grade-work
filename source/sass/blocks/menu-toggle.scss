@@ -4,12 +4,16 @@
   background: transparent;
   width: 16px;
   height: 16px;
-  padding: 0 22px;
+  padding: 22px 22px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition-duration: 0.2s;
   cursor: pointer;
+
+  &:active {
+    background: $active-background;
+  }
 
   @media (min-width: $tablet) {
     display: none;

@@ -25,6 +25,10 @@
 
 .footer__logo {
   padding-top: 2px;
+
+  @media (min-width: $tablet) {
+    width: 180px;
+  }
 }
 
 .footer__navigation {

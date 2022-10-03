@@ -1,4 +1,5 @@
 .swiper {
+  position: relative;
   width: 100%;
   height: 100%;
 }
@@ -8,27 +9,77 @@
 
   &--slide-1 {
     background: #f3ebe2;
+
+    @media (min-width: $tablet) {
+      background: linear-gradient(180deg, rgba(243, 235, 225, 1) 77%, rgba(255, 255, 255, 1) 66%);
+    }
+
+    @media (min-width: $desktop) {
+      background: #f3ebe2;
+    }
   }
 
   &--slide-2 {
     background: #eae6fc;
+
+    @media (min-width: $tablet) {
+      background: linear-gradient(180deg, rgba(234, 230, 252, 1) 77%, rgba(255, 255, 255, 1) 77%);
+    }
+
+    @media (min-width: $desktop) {
+      background: #eae6fc;
+    }
   }
 
   &--slide-3 {
     background: #e5e6e8;
+
+    @media (min-width: $tablet) {
+      background: linear-gradient(180deg, rgba(229, 230, 232, 1) 77%, rgba(255, 255, 255, 1) 77%);
+    }
+
+    @media (min-width: $desktop) {
+      background: #e5e6e8;
+    }
   }
 }
 
 .swiper-slide__container {
-  max-width: 87.5%;
+  padding: 0 20px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    flex-direction: column-reverse;
+  }
+
+  @media (min-width: $desktop) {
+    flex-direction: row;
+  }
+}
+
+.swiper-slide__image {
+  @media (min-width: $desktop) {
+    padding: 30px 30px 84px 105px;
+  }
 }
 
 .swiper-slide img {
   display: block;
-  object-fit: contain;
   margin: 0 auto;
   padding: 20px 20px 10px 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    width: 476px;
+    height: auto;
+  }
+
+  @media (min-width: $desktop) {
+    width: 600px;
+    height: auto;
+  }
 }
 
 .swiper-slide__new-product {
@@ -40,15 +91,30 @@
   color: $second-color;
   letter-spacing: 0.04em;
   margin: 0 0 4px 0;
+
+  @media (min-width: $desktop) {
+    text-align: start;
+  }
 }
 
 .swiper-slide__title {
   @include font-title(36px, 48px, 700);
+  letter-spacing: 0.02em;
 
   font-family: "Montserrat-Bold", "Arial", sans-serif;
 
   text-align: center;
   margin: 0 0 10px 0;
+
+  @media (min-width: $tablet) {
+    @include font-title(56px, 80px, 700);
+
+    margin: 0 0 16px 0;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: start;
+  }
 }
 
 .swiper-slide__description-text {
@@ -58,6 +124,31 @@
   padding: 0 5px;
   text-align: center;
   color: $first-color;
+
+  @media (min-width: $tablet) {
+    @include font-title(20px, 32px, 400);
+
+    width: 608px;
+    margin: 0 auto 20px;
+    padding: 0 10px;
+  }
+
+  @media (min-width: $desktop) {
+    text-align: start;
+    padding: 0 15px 0 0;
+    margin: 0 0 40px 0;
+  }
+}
+
+.swiper-slide__content {
+  @media (min-width: $tablet) {
+    padding: 60px 0 0 0;
+  }
+
+  @media (min-width: $desktop) {
+    width: 625px;
+    padding: 180px 0 0 0;
+  }
 }
 
 .swiper-slide__buy-wrapper {
@@ -66,6 +157,14 @@
   align-items: center;
   width: 230px;
   margin: 0 auto 60px;
+
+  @media (min-width: $tablet) {
+    margin: 0 auto 20px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+  }
 }
 
 .swiper-slide__price {
@@ -86,6 +185,7 @@
 .swiper-slide__button-buy {
   padding: 8px 20px;
   width: 113px;
+  outline: none;
 }
 
 .swiper-slide__button-text {
@@ -96,30 +196,120 @@
 }
 
 .swiper-button-next {
-  align-items: flex-start;
+  width: 20px;
+  right: 4px;
+  top: 0;
+  height: 100%;
   justify-content: end;
+  align-items: flex-center;
+  margin-top: 0;
+  text-align: center;
+  outline: none;
 
   &::after {
     width: 20px;
-    height: 20px;
+    height: 50px;
     font-size: 20px;
     color: $second-color;
+  }
+
+  @media (min-width: $tablet) {
+    right: 0;
+    width: 80px;
+    height: 640px;
+    justify-content: center;
+  }
+
+  @media (min-width: $desktop) {
+    height: 714px;
+  }
+
+  &:hover {
+    background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:active {
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+
+  &:focus {
+    background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
   }
 }
 
 .swiper-button-prev {
+  left: 4px;
+  top: 0;
+  height: 100%;
+  width: 20px;
   justify-content: start;
-  align-items: flex-start;
+  align-items: flex-center;
+  margin-top: 0;
+  text-align: center;
+  outline: none;
 
   &::after {
     width: 20px;
-    height: 20px;
+    height: 50px;
     font-size: 20px;
     color: $second-color;
+  }
+
+  @media (min-width: $tablet) {
+    left: 0;
+    width: 80px;
+    justify-content: center;
+    height: 640px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 714px;
+  }
+
+  &:hover {
+    background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+  }
+
+  &:active {
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
+  }
+
+  &:focus-visible {
+    background: linear-gradient(90deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
   }
 }
 
 .swiper-pagination {
+  display: none;
   height: 20px;
   bottom: 0;
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
+}
+
+.swiper-pagination.swiper-pagination-bullets {
+  @media (min-width: $desktop) {
+    bottom: 60px;
+  }
+}
+
+.swiper-pagination-bullet {
+  height: 4px;
+  width: 62px;
+  border-radius: 0;
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(120, 89, 207, 0.25);
+  }
+
+  &:active {
+    background: $second-color;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: $second-color;
 }

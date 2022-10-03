@@ -41,6 +41,7 @@
   text-decoration: none;
   text-transform: uppercase;
   color: $first-color;
+  outline: none;
 
   @media (min-width: $tablet) {
     padding: 32px 22px;
@@ -62,6 +63,10 @@
 
   @media (min-width: $desktop) {
     margin-right: 8px;
+  }
+
+  &:focus {
+    fill: $hover-color;
   }
 }
 

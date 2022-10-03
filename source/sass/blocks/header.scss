@@ -28,6 +28,11 @@
   @media (min-width: $desktop) {
     margin-right: 162px;
   }
+
+  &:focus {
+    outline: 2px solid $active-text;
+    outline-offset: 5px;
+  }
 }
 
 .header__container img {

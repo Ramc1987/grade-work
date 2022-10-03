@@ -29,6 +29,7 @@
 
 .main-nav__link {
   position: relative;
+  outline: none;
 
   @media (min-width: $tablet) {
     @include font-title(12px, 16px, 500);
@@ -47,6 +48,10 @@
 
   &:hover {
     color: #7859cf;
+  }
+
+  &:focus {
+    color: $hover-color;
   }
 }
 

@@ -65,6 +65,7 @@
   width: 160px;
   margin: auto;
   color: #ffffff;
+  cursor: pointer;
 
   @media (min-width: $tablet) {
     @include font-title(14px, 24px, 400);
@@ -81,4 +82,21 @@
       width: 138px;
     }
   }
+
+  &:hover {
+    background: #9070ec;
+    color: #ffffff;
+  }
+
+  &:active {
+    background: #593cac;
+  }
+}
+
+.filter__button-disabled {
+  background: #bdbdbd;
+}
+
+.filter__button-disabled-zero {
+  background: #e2e2e2;
 }

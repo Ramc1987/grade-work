@@ -14,10 +14,15 @@
   padding: 40px 20px 20px 18px;
   background: #ffffff;
   border-radius: 4px;
+  cursor: pointer;
 
   @media (min-width: $tablet) {
     padding: 50px 30px 30px 30px;
   }
+}
+
+.cards__product-link {
+  text-decoration: none;
 }
 
 .cards__product-image {
@@ -33,6 +38,7 @@
   @include font-title(18px, 32px, 700);
 
   margin: 0 0 4px 0;
+  color: $first-color;
 
   @media (min-width: $tablet) {
     @include font-title(24px, 36px, 700);
@@ -55,6 +61,8 @@
 
 .cards__product-price {
   @include font-title(20px, 32px, 600);
+
+  color: $first-color;
 }
 
 .cards__button-buy {
@@ -64,6 +72,7 @@
   padding: 8px 20px 8px 46px;
   width: 141px;
   color: #ffffff;
+  cursor: pointer;
 
   &::after {
     content: "";
@@ -74,4 +83,16 @@
     top: 10px;
     left: 20px;
   }
+
+  &:hover {
+    background: #9070ec;
+  }
+
+  &:active {
+    background: #593cac;
+  }
+}
+
+.cards__button-buy-disabled {
+  background: #bdbdbd;
 }

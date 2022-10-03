@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <title>Document</title>
@@ -32,7 +33,7 @@
             <a class="main-nav__link" href="#">доставка</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" class="main-nav__link" href="#">о нас</a>
+            <a class="main-nav__link" href="#">о нас</a>
           </li>
         </ul>
       </nav>
@@ -306,88 +307,100 @@
           </div>
           <ul class="catalog__products-list cards">
             <li class="cards__product">
-              <picture>
-                <source type="image/webp" srcset="img/catalog-cards/coffee-can-1@1x.webp 1x, img/catalog-cards/coffee-can-1@2x.webp 2x">
-                <img class="cards__product-image" src="img/catalog-cards/coffee-can-1@1x.png" srcset="img/catalog-cards/coffee-can-1@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт">
-              </picture>
-              <div class="cards__product-content">
-                <h2 class="cards__product-title">Декаф Флэт Уайт</h2>
-                <p class="cards__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-              </div>
-              <div class="cards__product-buy">
-                <span class="cards__product-price">225₽</span>
-                <button class="cards__button-buy button" type="button">В корзину</button>
-              </div>
+              <a href="#" class="cards__product-link">
+                <picture>
+                  <source type="image/webp" srcset="img/catalog-cards/coffee-can-1@1x.webp 1x, img/catalog-cards/coffee-can-1@2x.webp 2x">
+                  <img class="cards__product-image" src="img/catalog-cards/coffee-can-1@1x.png" srcset="img/catalog-cards/coffee-can-1@2x.png 2x" width="130" height="188" alt="Декаф Флэт Уайт">
+                </picture>
+                <div class="cards__product-content">
+                  <h2 class="cards__product-title">Декаф Флэт Уайт</h2>
+                  <p class="cards__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                </div>
+                <div class="cards__product-buy">
+                  <span class="cards__product-price">225₽</span>
+                  <button class="cards__button-buy button" type="button">В корзину</button>
+                </div>
+              </a>
             </li>
             <li class="cards__product">
-              <picture>
-                <source type="image/webp" srcset="img/catalog-cards/coffee-can-2@1x.webp 1x, img/catalog-cards/coffee-can-2@2x.webp 2x">
-                <img class="cards__product-image" src="img/catalog-cards/coffee-can-2@1x.png" srcset="img/catalog-cards/coffee-can-2@2x.png 2x" alt="Декаф Флэт Уайт">
-              </picture>
-              <div class="cards__product-content">
-                <h2 class="cards__product-title">Декаф Флэт Уайт</h2>
-                <p class="cards__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-              </div>
-              <div class="cards__product-buy">
-                <span class="cards__product-price">225₽</span>
-                <button class="cards__button-buy button" type="button">В корзину</button>
-              </div>
+              <a href="#" class="cards__product-link">
+                <picture>
+                  <source type="image/webp" srcset="img/catalog-cards/coffee-can-2@1x.webp 1x, img/catalog-cards/coffee-can-2@2x.webp 2x">
+                  <img class="cards__product-image" src="img/catalog-cards/coffee-can-2@1x.png" srcset="img/catalog-cards/coffee-can-2@2x.png 2x" alt="Декаф Флэт Уайт">
+                </picture>
+                <div class="cards__product-content">
+                  <h2 class="cards__product-title">Декаф Флэт Уайт</h2>
+                  <p class="cards__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                </div>
+                <div class="cards__product-buy">
+                  <span class="cards__product-price">225₽</span>
+                  <button class="cards__button-buy button" type="button">В корзину</button>
+                </div>
+              </a>
             </li>
             <li class="cards__product">
-              <picture>
-                <source type="image/webp" srcset="img/catalog-cards/coffee-can-3@1x.webp 1x, img/catalog-cards/coffee-can-3@2x.webp 2x">
-                <img class="cards__product-image" src="img/catalog-cards/coffee-can-3@1x.png" srcset="img/catalog-cards/coffee-can-3@2x.png 2x" alt="Декаф Флэт Уайт">
-              </picture>
-              <div class="cards__product-content">
-                <h2 class="cards__product-title">Декаф Флэт Уайт</h2>
-                <p class="cards__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-              </div>
-              <div class="cards__product-buy">
-                <span class="cards__product-price">225₽</span>
-                <button class="cards__button-buy button" type="button">В корзину</button>
-              </div>
+              <a href="#" class="cards__product-link">
+                <picture>
+                  <source type="image/webp" srcset="img/catalog-cards/coffee-can-3@1x.webp 1x, img/catalog-cards/coffee-can-3@2x.webp 2x">
+                  <img class="cards__product-image" src="img/catalog-cards/coffee-can-3@1x.png" srcset="img/catalog-cards/coffee-can-3@2x.png 2x" alt="Декаф Флэт Уайт">
+                </picture>
+                <div class="cards__product-content">
+                  <h2 class="cards__product-title">Декаф Флэт Уайт</h2>
+                  <p class="cards__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                </div>
+                <div class="cards__product-buy">
+                  <span class="cards__product-price">225₽</span>
+                  <button class="cards__button-buy button" type="button">В корзину</button>
+                </div>
+              </a>
             </li>
             <li class="cards__product">
-              <picture>
-                <source type="image/webp" srcset="img/catalog-cards/coffee-can-4@1x.webp 1x, img/catalog-cards/coffee-can-4@2x.webp 2x">
-                <img class="cards__product-image" src="img/catalog-cards/coffee-can-4@1x.png" srcset="img/catalog-cards/coffee-can-4@2x.png 2x" alt="Декаф Флэт Уайт">
-              </picture>
-              <div class="cards__product-content">
-                <h2 class="cards__product-title">Декаф Флэт Уайт</h2>
-                <p class="cards__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-              </div>
-              <div class="cards__product-buy">
-                <span class="cards__product-price">225₽</span>
-                <button class="cards__button-buy button" type="button">В корзину</button>
-              </div>
+              <a href="#" class="cards__product-link">
+                <picture>
+                  <source type="image/webp" srcset="img/catalog-cards/coffee-can-4@1x.webp 1x, img/catalog-cards/coffee-can-4@2x.webp 2x">
+                  <img class="cards__product-image" src="img/catalog-cards/coffee-can-4@1x.png" srcset="img/catalog-cards/coffee-can-4@2x.png 2x" alt="Декаф Флэт Уайт">
+                </picture>
+                <div class="cards__product-content">
+                  <h2 class="cards__product-title">Декаф Флэт Уайт</h2>
+                  <p class="cards__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                </div>
+                <div class="cards__product-buy">
+                  <span class="cards__product-price">225₽</span>
+                  <button class="cards__button-buy button" type="button">В корзину</button>
+                </div>
+              </a>
             </li>
             <li class="cards__product">
-              <picture>
-                <source type="image/webp" srcset="img/catalog-cards/coffee-can-5@1x.webp 1x, img/catalog-cards/coffee-can-5@2x.webp 2x">
-                <img class="cards__product-image" src="img/catalog-cards/coffee-can-5@1x.png" srcset="img/catalog-cards/coffee-can-5@2x.png 2x" alt="Декаф Флэт Уайт">
-              </picture>
-              <div class="cards__product-content">
-                <h2 class="cards__product-title">Декаф Флэт Уайт</h2>
-                <p class="cards__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-              </div>
-              <div class="cards__product-buy">
-                <span class="cards__product-price">225₽</span>
-                <button class="cards__button-buy button" type="button">В корзину</button>
-              </div>
+              <a href="#" class="cards__product-link">
+                <picture>
+                  <source type="image/webp" srcset="img/catalog-cards/coffee-can-5@1x.webp 1x, img/catalog-cards/coffee-can-5@2x.webp 2x">
+                  <img class="cards__product-image" src="img/catalog-cards/coffee-can-5@1x.png" srcset="img/catalog-cards/coffee-can-5@2x.png 2x" alt="Декаф Флэт Уайт">
+                </picture>
+                <div class="cards__product-content">
+                  <h2 class="cards__product-title">Декаф Флэт Уайт</h2>
+                  <p class="cards__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                </div>
+                <div class="cards__product-buy">
+                  <span class="cards__product-price">225₽</span>
+                  <button class="cards__button-buy button" type="button">В корзину</button>
+                </div>
+              </a>
             </li>
             <li class="cards__product">
-              <picture>
-                <source type="image/webp" srcset="img/catalog-cards/coffee-can-6@1x.webp 1x, img/catalog-cards/coffee-can-6@2x.webp 2x">
-                <img class="cards__product-image" src="img/catalog-cards/coffee-can-6@1x.png" srcset="img/catalog-cards/coffee-can-6@2x.png 2x" alt="Декаф Флэт Уайт">
-              </picture>
-              <div class="cards__product-content">
-                <h2 class="cards__product-title">Декаф Флэт Уайт</h2>
-                <p class="cards__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-              </div>
-              <div class="cards__product-buy">
-                <span class="cards__product-price">225₽</span>
-                <button class="cards__button-buy button" type="button">В корзину</button>
-              </div>
+              <a href="#" class="cards__product-link">
+                <picture>
+                  <source type="image/webp" srcset="img/catalog-cards/coffee-can-6@1x.webp 1x, img/catalog-cards/coffee-can-6@2x.webp 2x">
+                  <img class="cards__product-image" src="img/catalog-cards/coffee-can-6@1x.png" srcset="img/catalog-cards/coffee-can-6@2x.png 2x" alt="Декаф Флэт Уайт">
+                </picture>
+                <div class="cards__product-content">
+                  <h2 class="cards__product-title">Декаф Флэт Уайт</h2>
+                  <p class="cards__product-description">Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
+                </div>
+                <div class="cards__product-buy">
+                  <span class="cards__product-price">225₽</span>
+                  <button class="cards__button-buy button" type="button">В корзину</button>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -402,8 +415,8 @@
                   <span class="pagination__link-text">1</span>
                 </a>
               </li>
-              <li class="pagination__item pagination__item-checked">
-                <a class="pagination__link pagination__link" href="#">
+              <li class="pagination__item pagination__item">
+                <a class="pagination__link pagination__link-checked" href="#">
                   <span class="pagination__link-text">2</span>
                 </a>
               </li>
@@ -423,7 +436,7 @@
     <section class="map">
       <h2 class="visually-hidden">Карта с адресом компании</h2>
       <div class="map__wrapper">
-        <div class="map__container"></div>
+        <div id='map' class="map__container"></div>
       </div>
     </section>
   </main>
@@ -523,8 +536,10 @@
       </section>
     </div>
   </footer>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="./js/toggle-menu.js"></script>
   <script src="./js/slider.js"></script>
+  <script src="./js/map.js"></script>
 </body>
 </html>

@@ -9,6 +9,10 @@
   padding: 0;
   margin: 0 0 22px 0;
   color: $first-color;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 20px 0;
+  }
 }
 
 .country-prod__list {
@@ -20,7 +24,13 @@
   align-items: center;
 
   &:not(:last-child) {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
   }
 }
 

@@ -1,6 +1,14 @@
 .navigation-media__container {
   margin: 0 auto;
   padding: 20px;
+
+  @media (min-width: $tablet) {
+    padding: 0 0 0 20px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 49px 0 20px 0;
+  }
 }
 
 .navigation-media__title {

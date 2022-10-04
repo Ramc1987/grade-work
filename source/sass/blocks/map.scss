@@ -7,25 +7,25 @@
   &::after {
     content: "";
     position: absolute;
-    left: 156px;
-    top: 185px;
+    left: 50%;
+    top: 45%;
     width: 38px;
     height: 50px;
     background: url("../img/icons/map-pin.svg") no-repeat;
     z-index: 20;
-
-    @media (min-width: $tablet) {
-      top: 215px;
-      left: 380px;
-    }
   }
 
   @media (min-width: $tablet) {
     height: 480px;
     background: url("../img/map_bg-tablet.png") no-repeat center;
+    background-size: cover;
   }
 
   @media (min-width: $desktop) {
     height: 540px;
+  }
+
+  @media (min-width: $desktop) {
+    max-width: 1440px;
   }
 }

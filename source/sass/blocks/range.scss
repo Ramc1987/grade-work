@@ -39,6 +39,32 @@
   border-radius: 50%;
   background-color: #ffffff;
   border: 2px solid #9070ec;
+  outline: none;
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: calc(50% - 16px / 2);
+    left: calc(50% - 16px / 2);
+    width: 16px;
+    height: 16px;
+    background: rgba(120, 89, 207, 0.25);
+    border-radius: 50%;
+  }
+
+  &:hover::after {
+    display: block;
+  }
+
+  &:active::after {
+    display: block;
+    background: #7859cf;
+  }
+
+  &:focus::after {
+    display: block;
+  }
 }
 
 .range__toggle-min {
@@ -74,6 +100,10 @@
   @media (min-width: $tablet) {
     width: 92px;
   }
+
+  @media (min-width: $desktop) {
+    width: 134px;
+  }
 }
 
 .range__input {
@@ -88,10 +118,18 @@
   outline: none;
   text-align: center;
   color: #bdbdbd;
+
+  &:focus {
+    border: 2px solid #593cac;
+  }
 }
 
 .range__input-active {
   color: $first-color;
+}
+
+.range__input-disabled {
+  border: 2px solid #e2e2e2;
 }
 
 .range__input::-webkit-outer-spin-button,

@@ -9,6 +9,10 @@
   margin: 0 0 23px 0;
   padding: 0;
   color: $first-color;
+
+  @media (min-width: $tablet) {
+    margin: 0 0 20px 0;
+  }
 }
 
 .milk__list {
@@ -18,7 +22,16 @@
 .milk__item {
   display: flex;
   align-items: center;
-  margin: 0 0 21px 0;
+
+  &:not(:last-child) {
+    margin: 0 0 23px 0;
+  }
+
+  @media (min-width: $tablet) {
+    &:not(:last-child) {
+      margin: 0 0 20px 0;
+    }
+  }
 }
 
 .milk__custom-radio {
@@ -62,6 +75,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  &:hover {
+    border: 2px solid #9070ec;
+  }
+
+  &:hover::before {
+    display: block;
+    background: rgba(120, 89, 207, 0.25);
   }
 }
 

@@ -18,6 +18,10 @@
   @media (min-width: $tablet) {
     display: none;
   }
+
+  &--nojs {
+    display: none;
+  }
 }
 
 .menu-toggle__line {

@@ -9,15 +9,24 @@
   padding: 0;
   margin-bottom: 21px;
   color: $first-color;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 30px;
+  }
 }
 
 .range__toggles-wrapper {
   margin-bottom: 25px;
+
+  @media (min-width: $tablet) {
+    width: 232px;
+    margin-bottom: 32px;
+  }
 }
 
 .range__toggles {
   position: relative;
-  width: 100%;
+  width: 97%;
   height: 4px;
   background-color: #e2e2e2;
 }
@@ -91,6 +100,10 @@
     width: 9px;
     height: 2px;
     background-color: #bdbdbd;
+  }
+
+  @media (min-width: $tablet) {
+    width: 225px;
   }
 }
 

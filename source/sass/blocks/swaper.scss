@@ -1,6 +1,6 @@
 .swiper {
   position: relative;
-  max-width: 1440px;
+  width: 100%;
   height: 100%;
 }
 
@@ -56,6 +56,7 @@
 
   @media (min-width: $desktop) {
     flex-direction: row;
+    max-width: 1440px;
   }
 }
 
@@ -227,6 +228,7 @@
   }
 
   @media (min-width: $tablet) {
+    top: 15px;
     right: 0;
     width: 80px;
     height: 640px;
@@ -269,6 +271,7 @@
   }
 
   @media (min-width: $tablet) {
+    top: 15px;
     left: 0;
     width: 80px;
     justify-content: center;

@@ -15,14 +15,5 @@ function openMobMenu() {
   }
 }
 
-function mediaQuery() {
-  if(mediaSize){
-    mobileMenu.classList.remove('main-nav--open')
-    mobileMenu.classList.add('main-nav--close')
-  }
-}
-
-mediaQuery()
-
 toggleMenu.addEventListener('click', openMobMenu);
 
